@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.525ea623.css",
+    "main.js": "/static/js/main.d4835b3e.js",
+    "static/js/453.b42a5916.chunk.js": "/static/js/453.b42a5916.chunk.js",
+    "static/media/topalemirfaruk.svg": "/static/media/topalemirfaruk.81bb7c46abd0c1d857950fb451b86f6f.svg",
+    "static/media/1week.svg": "/static/media/1week.8c014504cdabd9b64085c530bb7a1763.svg",
+    "static/media/ediatira.svg": "/static/media/ediatira.60167532e77b68bf835aa11656bf7420.svg",
+    "static/media/ryatres.svg": "/static/media/ryatres.b758c474e36483d232f2e598fc6fa098.svg",
+    "static/media/sekullarx.svg": "/static/media/sekullarx.bbb1ba0d135c45c02dea6652fa352c6f.svg",
+    "static/media/novadarwin6462.svg": "/static/media/novadarwin6462.38e033a12657c5d4804e107a027efe4e.svg",
+    "static/media/Vector.svg": "/static/media/Vector.547854fd8c0c7b0c9476e892eaa1fec0.svg",
+    "static/media/emoji-kiss.svg": "/static/media/emoji-kiss.f900c86442699af5ac1862f1c889cd09.svg",
+    "static/media/emoji-wink.svg": "/static/media/emoji-wink.7813d9b1783f4063d86e1721b8422f1c.svg",
+    "index.html": "/index.html",
+    "main.525ea623.css.map": "/static/css/main.525ea623.css.map",
+    "main.d4835b3e.js.map": "/static/js/main.d4835b3e.js.map",
+    "453.b42a5916.chunk.js.map": "/static/js/453.b42a5916.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.525ea623.css",
+    "static/js/main.d4835b3e.js"
+  ]
+}
