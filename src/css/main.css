@@ -6,7 +6,7 @@
 :root{
     --bg-theme-dark: #171717;
     --bg-theme-dark-2: #101010;
-
+    --bg-theme-dark-3:  #373737
 }
 
 .inter-400 {
@@ -66,6 +66,10 @@
 
 .bg-theme-dark-2{
     background-color: var(--bg-theme-dark-2);
+}
+
+.font-theme-3{
+    color: var(--bg-theme-dark-3);
 }
 
 #article{
