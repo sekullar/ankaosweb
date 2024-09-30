@@ -1,9 +1,24 @@
 import "../css/requirement.css"
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer'; 
+import { useState } from "react"
 
 const Requirement = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.2,
+    });
+    
+
+    const [hasAnimated, setHasAnimated] = useState(false);
+
+    if (inView && !hasAnimated) {
+        setHasAnimated(true);
+    }
+
     return(
         <>  
-            <div className="flex items-center py-24 px-8 justify-around">
+            <motion.div ref={ref} animate={{ opacity: hasAnimated ? 1 : 0 }} transition={{ duration: 1 }}  className="flex items-center py-24 px-8 justify-around">
                 <div className="flex flex-col">
                     <p className="text-white space-grotesk-700 text-4xl">Asgari sistem özellikleri</p>
                     <div className="flex-col flex mt-3 gap-1">
@@ -24,7 +39,7 @@ const Requirement = () => {
                         <p className="theme-gray-font space-grotesk-400 text-xl">Ses Kartı: Herhangi bir ses kartı</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

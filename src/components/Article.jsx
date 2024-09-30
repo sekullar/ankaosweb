@@ -1,9 +1,10 @@
 import "../css/article.css"
+import DownImg from "../images/mingcute--down-line.svg"
 
 const Article = () => {
     return(
         <>
-            <div id="article">
+            <div id="article" className="relative">
                 <div className="flex items-center flex-col justify-center relative h-full">
                     <p className="text-white space-grotesk-700 text-5xl">El emeği, göz nuru!</p>
                     <p className="text-white opacity-50 space-grotesk-400 mt-4 text-2xl">Yerli, kullanımı kolay, basit bir distro. İndirin, kurun ve kalitenin keyfine bakın.</p>
@@ -13,6 +14,7 @@ const Article = () => {
                     </div>
                     <p className="absolute bottom-0 mb-7 inter-400 text-2xl text-white opacity-50">Burada bitmiyor, aşağı kaydır!</p>
                 </div>
+                <img src={DownImg} className="absolute end-0 bottom-0 me-3 mb-3 w-[50px]" id="downArrow"  alt="Down Arrow" />
             </div>
         </>
     )

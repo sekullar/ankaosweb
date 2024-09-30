@@ -1,10 +1,25 @@
 import "../css/main.css"
 import "../css/download.css"
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer'; 
+import { useState } from "react"
 
 const Download = () => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.4,
+    });
+    
+
+    const [hasAnimated, setHasAnimated] = useState(false);
+
+    if (inView && !hasAnimated) {
+        setHasAnimated(true);
+    }
+
     return(
         <>
-            <div className="mw-2100px">
+            <motion.div  ref={ref} animate={{ opacity: hasAnimated ? 1 : 0 }} transition={{ duration: 1 }}  className="mw-2100px" id="download">
                 <div className="px-24 py-24 flex flex-col gap-4">
                     <div className="flex flex-col gap-4">
                         <p className="space-grotesk-700 text-6xl">Beğendiniz mi?</p>
@@ -16,7 +31,7 @@ const Download = () => {
                     </div>
                     <p className="mt-4 opacity-50 text-lg space-grotesk-400">* İnternet hızınıza bağlı aldığınız deneyim değişebilir. Eğer önerilen bağlantı hızlı değilse başka bir bağlantı seçin.</p>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

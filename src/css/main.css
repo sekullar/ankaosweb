@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg-theme-dark: #171717;
     --bg-theme-dark-2: #101010;
